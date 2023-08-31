@@ -17,7 +17,7 @@
         <RootNamespace>AzureAI.Community.Microsoft.Semantic.Kernel.Speech</RootNamespace>
       <Company>Azure.AI.Community</Company>
       <PackageReadmeFile>README.md</PackageReadmeFile>
-      <PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate;Speech;</PackageTags>
+      <PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate;Speech;plugin</PackageTags>
       <PackAsTool>True</PackAsTool>
       <license>MIT</license>
       <Copyright>Azure.AI.Community</Copyright>

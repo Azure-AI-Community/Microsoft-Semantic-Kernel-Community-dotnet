@@ -20,6 +20,7 @@
       <PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate</PackageTags>
       <PackAsTool>True</PackAsTool>
       <license>MIT</license>
+      <Copyright>Azure.AI.Community</Copyright>
     </PropertyGroup>
 
   <ItemGroup>
