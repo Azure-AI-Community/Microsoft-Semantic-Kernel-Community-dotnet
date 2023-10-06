@@ -4,11 +4,12 @@ The **Microsoft-Semantic-Kernel-Community** is a versatile platform that support
 
 ## Available Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| [YouTube Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube) | Enhance your applications with YouTube integration. |
-| [Speech Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.Speech) | Convert spoken language into text and vice versa. |
-| [Translation Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.Translation) | Translate text from one language to another. |
+| Plugin | Description | Nuget |
+|--------|-------------|-------|
+| [YouTube Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube) | Enhance your applications with YouTube integration. | [YouTube](https://www.nuget.org/packages/AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube/) |
+| [Speech Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.Speech) | Convert spoken language into text and vice versa. | [Speech](https://www.nuget.org/packages/AzureAI.Community.Microsoft.Semantic.Kernel.Speech/) |
+| [Translation Plugin](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/tree/main/libraries/AzureAI.Community.Microsoft.Semantic.Kernel.Translation) | Translate text from one language to another. | [Translation](https://www.nuget.org/packages/AzureAI.Community.Microsoft.Semantic.Kernel.Translation/) |
+
 
 ## Upcoming Plugins
 
