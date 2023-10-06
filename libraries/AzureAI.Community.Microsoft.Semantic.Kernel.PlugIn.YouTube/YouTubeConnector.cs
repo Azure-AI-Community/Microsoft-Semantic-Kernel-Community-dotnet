@@ -41,8 +41,9 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube
 
             this.logger.LogTrace("Response content received: {Data}", search);
 
-            List<YoTubeResult> videoResult = JsonConvert.DeserializeObject<List<YoTubeResult>>(search);
+            search = search.Replace(": null", ": 0");
 
+            List<YoTubeResult> videoResult = JsonConvert.DeserializeObject<List<YoTubeResult>>(search);
             if (videoResult?.Count > 0)
             {
                 List<string> urlList = new();
