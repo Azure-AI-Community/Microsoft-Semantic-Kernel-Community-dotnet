@@ -1,7 +1,7 @@
 <Project>
 
     <PropertyGroup>
-        <NETVersion>net7.0</NETVersion>
+        <NETVersion>net8.0</NETVersion>
         <SKVersion>0.21.230828.2-preview</SKVersion>     
 		<TranslationText>1.0.0-beta.1</TranslationText>	
 		<CognitiveServicesSpeech>1.31.0</CognitiveServicesSpeech>		

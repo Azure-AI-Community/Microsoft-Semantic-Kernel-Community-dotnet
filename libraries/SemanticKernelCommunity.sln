@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureAI.Community.Microsoft
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "AzureAI.Community.Microsoft.Semantic.Kernel.Translation\AzureAI.Community.Microsoft.Semantic.Kernel.Translation.csproj", "{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.YouTube\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.csproj", "{6E0C509B-CF83-420F-9AD2-78C5C79ADD93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0C509B-CF83-420F-9AD2-78C5C79ADD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0C509B-CF83-420F-9AD2-78C5C79ADD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0C509B-CF83-420F-9AD2-78C5C79ADD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0C509B-CF83-420F-9AD2-78C5C79ADD93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
