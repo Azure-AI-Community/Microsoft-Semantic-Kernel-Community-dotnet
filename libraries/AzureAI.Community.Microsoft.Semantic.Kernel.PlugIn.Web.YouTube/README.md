@@ -54,4 +54,16 @@ Console.WriteLine(result);
 
 ```
 
-## Loading ...... Next feature Chennal-based search
+## Channels based search
+YouTubeConnector offers robust support for conducting searches based on YouTube channels. 
+This functionality allows users to efficiently retrieve and analyze content associated with specific YouTube channels.
+
+When initializing the YouTubeConnector, simply supply the channel ID.
+
+Here's an example code snippet:
+
+```csharp
+
+ var youTubeConnector = new YouTubeConnector("YouTube-Key","youTube-ChannelId");
+
+```

@@ -7,8 +7,8 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.Search;
 internal class YouTubeSearch : IYouTubeSearch
 {
     private readonly YouTubeService youtubeService;
-    
-    public YouTubeSearch(string apiKey)
+    private string chennalId;
+    public YouTubeSearch(string apiKey,string channelId = "")
     {
         if (string.IsNullOrEmpty(apiKey))
             throw new ArgumentNullException(nameof(apiKey));
@@ -16,12 +16,12 @@ internal class YouTubeSearch : IYouTubeSearch
         youtubeService= new YouTubeService(new BaseClientService.Initializer()
         {
             ApiKey = apiKey,
-            ApplicationName = GetType().ToString()
+            ApplicationName = GetType().ToString(),
         });
-
+        this.chennalId = channelId;
     }
 
-    public async Task<string> Search(string keyWords, int maxResult = 10)
+    public async Task<string> Search(string keyWords,int count=10)
     {
         if (string.IsNullOrEmpty(keyWords))
             throw new ArgumentNullException(nameof(keyWords));
@@ -30,7 +30,13 @@ internal class YouTubeSearch : IYouTubeSearch
         try
         {
             var searchListRequest = youtubeService.Search.List("snippet");
-            searchListRequest.MaxResults = maxResult;
+
+            if (!string.IsNullOrEmpty(chennalId) && !string.IsNullOrWhiteSpace(chennalId))
+            {
+                searchListRequest.ChannelId = chennalId;
+            }
+
+            searchListRequest.MaxResults = count;
 
             searchListRequest.Q = keyWords;
 
