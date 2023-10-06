@@ -8,9 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube" Version="0.0.4-preview" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="0.24.230918.1-preview" />
     <PackageReference Include="Microsoft.SemanticKernel.Skills.Web" Version="0.24.230918.1-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.csproj" />
   </ItemGroup>
 
 </Project>

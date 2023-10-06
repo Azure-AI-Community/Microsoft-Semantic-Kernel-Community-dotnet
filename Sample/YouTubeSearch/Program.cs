@@ -10,7 +10,10 @@ namespace YouTubeSearchSample
         {
             Console.WriteLine("Hello, Youtube Connector for Microsoft Semantic Kernel");
 
-            var youTubeConnector = new YouTubeConnector("youtube-api-key");
+            string apiKey = "";
+            string youTubeChannelId = "";
+
+            var youTubeConnector = new YouTubeConnector(apiKey: apiKey,channelId: youTubeChannelId);
 
             IKernel kernel = Kernel.Builder.Build();
             
@@ -18,7 +21,14 @@ namespace YouTubeSearchSample
 
             var result = await kernel.RunAsync("Bot composer", youtubeSkill["search"]);
 
-            Console.WriteLine(result);
+            string[] urls = result.Result.Replace("[", "").Replace("]", "").Split(',');
+
+            int serialNumber = 1;
+            foreach (string url in urls)
+            {
+                string trimmedUrl = url.Trim();
+                Console.WriteLine($"{serialNumber++}: {trimmedUrl}");
+            }
 
             Console.ReadKey();
 
