@@ -3,10 +3,10 @@
 ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/vinothrajendran)
 
 
-
-
-
 The **Microsoft-Semantic-Kernel-Community** is a versatile platform that supports plugins and connectors for various functionalities. Here are the currently available plugins and upcoming connectors:
+
+### Microsoft Semantic Kernel NuGet package ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/Microsoft.SemanticKernel)
+
 
 ## Available Plugins
 
