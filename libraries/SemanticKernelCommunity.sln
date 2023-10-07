@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Speech", "AzureAI.Community.Microsoft.Semantic.Kernel.Speech", "{6229D2AB-9EE6-46DC-BFE6-9A933CFA9358}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Speech", "AzureAI.Community.Microsoft.Semantic.Kernel.Speech\AzureAI.Community.Microsoft.Semantic.Kernel.Speech.csproj", "{B630CFE7-C09C-4A76-9B39-312C29E3BA28}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "{23FB40CC-23F2-43DE-A499-38C8274921FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "AzureAI.Community.Microsoft.Semantic.Kernel.Translation\AzureAI.Community.Microsoft.Semantic.Kernel.Translation.csproj", "{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC}"
 EndProject
@@ -50,8 +46,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B630CFE7-C09C-4A76-9B39-312C29E3BA28} = {6229D2AB-9EE6-46DC-BFE6-9A933CFA9358}
-		{17124E36-D43B-4FE3-BE12-0C3E36F1A8AC} = {23FB40CC-23F2-43DE-A499-38C8274921FE}
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
