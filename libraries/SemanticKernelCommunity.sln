@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent.csproj", "{1985BD58-E415-455F-B9B9-632A74544D01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingDataConnectorSample", "..\Sample\BingDataConnector\BingDataConnector\BingDataConnectorSample.csproj", "{848FB196-D136-47CF-8095-5602A3DE75A5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.csproj", "{175203F8-F44A-4874-9CEE-C307D9018F06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingSearchSample", "..\Sample\BingSearchSample\BingSearchSample.csproj", "{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,21 +45,21 @@ Global
 		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{848FB196-D136-47CF-8095-5602A3DE75A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{848FB196-D136-47CF-8095-5602A3DE75A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{848FB196-D136-47CF-8095-5602A3DE75A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{848FB196-D136-47CF-8095-5602A3DE75A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
-		{848FB196-D136-47CF-8095-5602A3DE75A5} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
+		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41C162-7944-49E9-AEC4-E94855C6A214}

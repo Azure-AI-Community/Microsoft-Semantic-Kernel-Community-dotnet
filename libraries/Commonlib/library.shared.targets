@@ -1,10 +1,12 @@
 <Project>
 
-    <PropertyGroup>
-        <NETVersion>net7.0</NETVersion>
-        <SKVersion>1.0.0-beta1</SKVersion>     
-		<TranslationText>1.0.0-beta.1</TranslationText>	
-		<CognitiveServicesSpeech>1.31.0</CognitiveServicesSpeech>		
-    </PropertyGroup>
+  <PropertyGroup>
+    <NETVersion>net7.0</NETVersion>
+    <SKVersion>1.0.0-beta1</SKVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <NugetVersion>1.0.0-beta1</NugetVersion>
+    <TranslationText>1.0.0-beta.1</TranslationText>
+    <CognitiveServicesSpeech>1.31.0</CognitiveServicesSpeech>
+  </PropertyGroup>
 
 </Project>

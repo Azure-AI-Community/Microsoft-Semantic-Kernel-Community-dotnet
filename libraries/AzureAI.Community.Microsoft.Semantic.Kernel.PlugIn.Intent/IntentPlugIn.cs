@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent.Template;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.AI;
 using Microsoft.SemanticKernel.Orchestration;
-using Microsoft.SemanticKernel.SkillDefinition;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent;
 
@@ -17,11 +17,19 @@ public class IntentPlugIn
 
         var prompt = PromptBuilder.Build(examples);
 
+        AIRequestSettings aiRequestSettings = new AIRequestSettings
+        {
+            ExtensionData = new Dictionary<string, object>
+            {
+                { "Temperature", PromptBuilder.Temperature },
+                { "TopP", PromptBuilder.TopP },
+                { "MaxTokens", PromptBuilder.MaxTokens }
+            }
+        };
+
+
         this.intentSkFunction = kernel.CreateSemanticFunction(prompt,
-            description: "Determine the Intent and entities within the provide text.",
-            maxTokens: PromptBuilder.MaxTokens,
-            temperature: PromptBuilder.Temperature,
-            topP: PromptBuilder.TopP);
+            description: "Determine the Intent and entities within the provide text.",requestSettings:aiRequestSettings);
 
     }
 
