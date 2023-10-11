@@ -1,6 +1,6 @@
 ﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.Skills.Web;
+using Microsoft.SemanticKernel.Plugins.Web;
 
 namespace YouTubeSearchSample
 {
@@ -16,18 +16,23 @@ namespace YouTubeSearchSample
             var youTubeConnector = new YouTubeConnector(apiKey: apiKey,channelId: youTubeChannelId);
 
             IKernel kernel = Kernel.Builder.Build();
-            
-            var youtubeSkill = kernel.ImportSkill(new WebSearchEngineSkill(youTubeConnector), nameof(YouTubeConnector));
+
+            var youtubeSkill = kernel.ImportFunctions(new WebSearchEnginePlugin(youTubeConnector), nameof(YouTubeConnector));
 
             var result = await kernel.RunAsync("Bot composer", youtubeSkill["search"]);
 
-            string[] urls = result.Result.Replace("[", "").Replace("]", "").Split(',');
+            var resultUrl = result?.GetValue<string>();
+
+            string[]? urls = resultUrl?.Replace("[", "").Replace("]", "").Split(',');
 
             int serialNumber = 1;
-            foreach (string url in urls)
+            if (urls != null)
             {
-                string trimmedUrl = url.Trim();
-                Console.WriteLine($"{serialNumber++}: {trimmedUrl}");
+                foreach (string url in urls)
+                {
+                    string trimmedUrl = url.Trim();
+                    Console.WriteLine($"{serialNumber++}: {trimmedUrl}");
+                }
             }
 
             Console.ReadKey();

@@ -2,8 +2,9 @@
 using AzureAI.Community.Microsoft.Semantic.Kernel.Translation.Text;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
-using Microsoft.SemanticKernel.SkillDefinition;
+
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.Translation.Plugin;
 

@@ -1,7 +1,7 @@
 ﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.Search;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.SemanticKernel.Skills.Web;
+using Microsoft.SemanticKernel.Plugins.Web;
 using Newtonsoft.Json;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube
@@ -43,7 +43,7 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube
 
             search = search.Replace(": null", ": 0");
 
-            List<YoTubeResult> videoResult = JsonConvert.DeserializeObject<List<YoTubeResult>>(search);
+            List<YouTubeResult>? videoResult = JsonConvert.DeserializeObject<List<YouTubeResult>>(search);
             if (videoResult?.Count > 0)
             {
                 List<string> urlList = new();
@@ -58,7 +58,8 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube
                         }
                     }
                 }
-                return urlList?.Count <= 0 ? Enumerable.Empty<string>() : urlList;
+
+                return urlList?.Count > 0 ? urlList : Enumerable.Empty<string>();
             }
 
             return new[] { string.Empty };

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
-using Microsoft.SemanticKernel.SkillDefinition;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.Speech.Plugin;
 

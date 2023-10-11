@@ -22,14 +22,14 @@
 		<PackAsTool>False</PackAsTool>
 		<license>MIT</license>
 		<Copyright>Azure.AI.Community</Copyright>
-		<Version>0.0.5</Version>
-		<PackageVersion>0.0.5-preview</PackageVersion>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0-Beta</PackageVersion>
   </PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Google.Apis.YouTube.v3" Version="1.62.0.3169" />
 		<PackageReference Include="Microsoft.SemanticKernel" Version="0.24.230918.1-preview" />
-		<PackageReference Include="Microsoft.SemanticKernel.Skills.Web" Version="0.24.230918.1-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="1.0.0-beta1" />
 	</ItemGroup>
 
 	<ItemGroup>
