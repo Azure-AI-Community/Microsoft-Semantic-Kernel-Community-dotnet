@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)../', 'SemanticKernelCommunity.sln'))\Commonlib\library.shared.targets" />
 
 	<PropertyGroup>
@@ -22,14 +22,15 @@
 		<PackAsTool>False</PackAsTool>
 		<license>MIT</license>
 		<Copyright>Azure.AI.Community</Copyright>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0-Beta</PackageVersion>
+    <Version>$(FileVersion)</Version>
+    <PackageVersion>$(NugetVersion)</PackageVersion>
+    <PackageOutputPath>..\nugetPackage</PackageOutputPath>
   </PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Google.Apis.YouTube.v3" Version="1.62.0.3169" />
-		<PackageReference Include="Microsoft.SemanticKernel" Version="0.24.230918.1-preview" />
-		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="1.0.0-beta1" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="$(SKVersion)" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="$(SKVersion)" />
 	</ItemGroup>
 
 	<ItemGroup>

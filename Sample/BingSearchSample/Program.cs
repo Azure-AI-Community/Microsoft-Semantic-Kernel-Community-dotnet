@@ -1,11 +1,10 @@
 ﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.News;
 using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.Video;
-
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.Plugins.Web;
 
-namespace BingDataConnectorSample
+namespace BingSearchSample
 {
     internal class Program
     {
