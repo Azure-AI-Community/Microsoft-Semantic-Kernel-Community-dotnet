@@ -9,11 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YouTubeSearchSample", "..\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.csproj", "{A556EDAA-AD6A-4C2C-89DB-069648189B07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent.csproj", "{1985BD58-E415-455F-B9B9-632A74544D01}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Speech", "AzureAI.Community.Microsoft.Semantic.Kernel.Speech\AzureAI.Community.Microsoft.Semantic.Kernel.Speech.csproj", "{9864B293-45E3-4885-A072-1C48C96EFBAC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "AzureAI.Community.Microsoft.Semantic.Kernel.Translation\AzureAI.Community.Microsoft.Semantic.Kernel.Translation.csproj", "{C7F4009C-49F3-412E-8138-9365BB5DB27F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent.csproj", "{1985BD58-E415-455F-B9B9-632A74544D01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingDataConnectorSample", "..\Sample\BingDataConnector\BingDataConnector\BingDataConnectorSample.csproj", "{848FB196-D136-47CF-8095-5602A3DE75A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.csproj", "{175203F8-F44A-4874-9CEE-C307D9018F06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,6 @@ Global
 		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,12 +41,25 @@ Global
 		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848FB196-D136-47CF-8095-5602A3DE75A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848FB196-D136-47CF-8095-5602A3DE75A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848FB196-D136-47CF-8095-5602A3DE75A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848FB196-D136-47CF-8095-5602A3DE75A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
+		{848FB196-D136-47CF-8095-5602A3DE75A5} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41C162-7944-49E9-AEC4-E94855C6A214}

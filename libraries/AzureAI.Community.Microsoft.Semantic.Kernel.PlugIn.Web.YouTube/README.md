@@ -31,21 +31,21 @@ Here's an example code snippet:
 
 ```
 
-### Importing a Skill into the Kernel
+### Importing a Plugin into the Kernel
 
-To import a skill into the kernel, you can use the following C# code snippet:
+To import a Plugin into the kernel, you can use the following C# code snippet:
 
 ```csharp
- var youtubeSkill = kernel.ImportSkill(new WebSearchEngineSkill(youTubeConnector), nameof(YouTubeConnector));
+  var youtubePlugin = kernel.ImportFunctions(new WebSearchEnginePlugin(youTubeConnector), nameof(YouTubeConnector));
 
 ```
 
-### Running a Skill within the Kernel
+### Running a Plugin within the Kernel
 
-To execute a skill within the kernel, you can use the following C# code snippet:
+To execute a Plugin within the kernel, you can use the following C# code snippet:
 
 ```csharp
-var result = await kernel.RunAsync("Bot composer", youtubeSkill["search"]);
+var result = await kernel.RunAsync("Bot composer", youtubePlugin["search"]);
 ```
 
 ### Output
