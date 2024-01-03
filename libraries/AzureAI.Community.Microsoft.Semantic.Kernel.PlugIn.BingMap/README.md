@@ -24,6 +24,18 @@ Here's an example code snippet:
 
 ```
 
+### IncludeCoordinates
+
+SuggestionAddressPlugin is its optional parameter, includeCoordinates. When set to true, this parameter enables the plugin to provide not only address suggestions but also corresponding geographic coordinates. 
+
+Here's an example code snippet:
+
+```csharp
+
+ var suggestionAddressPlugin = new SuggestionAddressPlugin("Bing Map-Key",true);
+
+```
+
 ## Method Signature
 
 ```csharp
@@ -43,7 +55,7 @@ The method returns a Task<string>, indicating that the operation is asynchronous
 ```csharp
 
 //Add the location search plugin 
-var location = new SuggestionAddressPlugin("Bing map key");
+var location = new SuggestionAddressPlugin("Bing map key",true);
 builder.Plugins.AddFromObject(location);
 
 //Create kernel function
