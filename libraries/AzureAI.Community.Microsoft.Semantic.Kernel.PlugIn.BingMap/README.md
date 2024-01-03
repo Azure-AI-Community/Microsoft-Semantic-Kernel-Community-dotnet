@@ -1,12 +1,6 @@
-# Microsoft-Semantic-Kernel-Community-dotnet
-
-You can find the latest release notes and updates for the Microsoft Semantic Kernel Community .NET at the following link:
-[Release Notes](https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet)
-
 # SuggestionAddressPlugin
 
-The `AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap` This component offers a streamlined solution for conducting Bing maps location searches.
-
+The `AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap` This component offers a streamlined solution for discovering based on suggestions such as hotels, coffee shops, restaurants, and petrol stations.
 
 # Building a SuggestionAddressPlugin
 
@@ -20,11 +14,7 @@ Before you begin building the plugin, make sure you have the following prerequis
 
 **Azure Bing Maps API Key**: Obtain an API key from Azure Bing Maps to gain access to location data.
 
-`SuggestionAddressPlugin` is a class designed for discovering addresses based on suggestions such as hotels, coffee shops, restaurants, and petrol stations.
-
 ### Create an Instance of SuggestionAddressPlugin
-
-The `SuggestionAddressPlugin` class is responsible for conducting the search for location-based search suggestions . You need to create an instance of this class by providing your YouTube API key
 
 Here's an example code snippet:
 
