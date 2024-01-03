@@ -1,11 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)../', 'SemanticKernelCommunity.sln'))\Commonlib\library.shared.targets" />
 
   <PropertyGroup>
-		<TargetFramework>$(NETVersion)</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Title>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing</Title>
 		<Authors>Azure.AI.Community - Vinoth Rajendran</Authors>
 		<Description>AzureAI.Community Microsoft Semantic Kernel.PlugIn.Bing</Description>
@@ -13,29 +12,27 @@
 		<PackageIcon>azureai.jpeg</PackageIcon>
 		<RepositoryUrl>https://github.com/Azure-AI-Community</RepositoryUrl>
 		<PackageReleaseNotes>https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/blob/main/README.md</PackageReleaseNotes>
-		<PackageId>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube</PackageId>
+		<PackageId>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap</PackageId>
 		<PackageLicenseUrl>https://github.com/Azure-AI-Community</PackageLicenseUrl>
-		<RootNamespace>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing</RootNamespace>
+		<RootNamespace>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap</RootNamespace>
 		<Company>Azure.AI.Community</Company>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate;youtube;Plugin;search;bing</PackageTags>
+		<PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate;BingMap;Plugin;search;bing;map</PackageTags>
 		<PackAsTool>False</PackAsTool>
 		<license>MIT</license>
 		<Copyright>Azure.AI.Community</Copyright>
-    <Version>$(FileVersion)</Version>
+		<Version>1.0.0-preview-4</Version>
 		<PackageVersion>$(NugetVersion)</PackageVersion>
     <PackageOutputPath>..\nugetPackage</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Maps.Search" Version="1.0.0-beta.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.1" />
     <PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="1.0.1-alpha" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    	
-	</ItemGroup>
 	
-	<ItemGroup>
-	  <None Update="azureai.jpeg">
+ <None Update="azureai.jpeg">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
@@ -44,5 +41,6 @@
 	    <PackagePath>\</PackagePath>
 	  </None>
   </ItemGroup>
+
 
 </Project>

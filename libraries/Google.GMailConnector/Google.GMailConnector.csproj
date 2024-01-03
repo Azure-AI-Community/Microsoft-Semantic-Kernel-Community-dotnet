@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)../', 'SemanticKernelCommunity.sln'))\Commonlib\library.shared.targets" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google.GMailConnector</AssemblyName>
+    <RootNamespace>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google</RootNamespace>
+    <Title>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google.GMailConnector</Title>
+    <Authors>Azure.AI.Community - Vinoth Rajendran</Authors>
+    <Description>Azure AI  Community Microsoft Semantic Kernel Google GMail Connector</Description>
+    <PackageProjectUrl>https://github.com/Azure-AI-Community</PackageProjectUrl>
+    <PackageIcon>azureai.jpeg</PackageIcon>
+    <RepositoryUrl>https://github.com/Azure-AI-Community</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/blob/main/README.md</PackageReleaseNotes>
+    <PackageId>AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google.GMailConnector</PackageId>
+    <PackageLicenseUrl>https://github.com/Azure-AI-Community</PackageLicenseUrl>
+    <Company>Azure.AI.Community</Company>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Microsoft;Semantic:Kernel;AI;Azure;google;gmail;plugin</PackageTags>
+    <PackAsTool>False</PackAsTool>
+    <license>MIT</license>
+    <Copyright>Azure.AI.Community</Copyright>
+    <Version>$(FileVersion)</Version>
+    <PackageVersion>$(NugetVersion)</PackageVersion>
+    <PackageOutputPath>B:\github\Microsoft-Semantic-Kernel-Community-dotnet\libraries\nugetPackage</PackageOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Discovery.v1" Version="1.62.0" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.62.1.3217" />
+    <PackageReference Include="Google.Apis.PeopleService.v1" Version="1.63.0.3093" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-beta3" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.MsGraph" Version="1.0.0-beta3" />
+    <PackageReference Include="MimeKit" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="azureai.jpeg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
