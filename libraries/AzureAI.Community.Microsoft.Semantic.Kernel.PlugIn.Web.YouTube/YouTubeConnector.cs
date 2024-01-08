@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube
 {
+#pragma warning disable SKEXP0054
     public sealed class YouTubeConnector : IWebSearchEngineConnector
     {
         private readonly IYouTubeSearch youTubeSearch;

@@ -19,6 +19,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingSearchSample", "..\Sample\BingSearchSample\BingSearchSample.csproj", "{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.BingMap\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.csproj", "{7B2108D9-61D4-4C28-BBC3-0842E536B23D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.GMailConnector", "Google.GMailConnector\Google.GMailConnector.csproj", "{0DA49646-328A-49EC-84F2-3DAACE3D0F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMapSample", "..\Sample\BingMapSample\BingMapSample.csproj", "{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +59,18 @@ Global
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +78,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
+		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0} = {3693AD86-4115-4F13-A6D1-9AC2ABD6F77A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F41C162-7944-49E9-AEC4-E94855C6A214}

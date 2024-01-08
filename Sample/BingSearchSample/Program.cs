@@ -1,30 +1,33 @@
 ﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.News;
 using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.Video;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.Plugins.Web;
 
 namespace BingSearchSample
 {
+#pragma warning disable SKEXP0054
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello,Bing Search");
+            Console.WriteLine("Hello,Bing Search News - Video");
 
-            IKernel kernel = Kernel.Builder.Build();
-            KernelResult? result = null;
+            var kernel = Kernel.CreateBuilder()
+                .AddAzureOpenAIChatCompletion(Config.DeploymentOrModelId, Config.Endpoint, Config.ApiKey)
+                .Build();
 
-            string bingVideoSubscriptionKey = "";
-            string bingNewsSubscriptionKey = "";
+            FunctionResult result;
+
+            bool includeCoordinates = true;
 
             while (true)
-            { 
+            {
                 Console.WriteLine("1. Bing Video Search");
                 Console.WriteLine("2. Bing News Search");
-                Console.WriteLine("3. Exits");
+                Console.WriteLine("3. Bing Map Location Search");
+                Console.WriteLine("4. Exits");
 
-                
+
                 Console.WriteLine("\nEnter your choice:");
                 SearchType searchType = (SearchType)Convert.ToInt32(Console.ReadLine());
 
@@ -32,35 +35,30 @@ namespace BingSearchSample
                 Console.WriteLine("Type the keyword to search");
                 string keyword = Console.ReadLine() ?? throw new ArgumentNullException("Console.ReadLine()");
 
+                WebSearchEnginePlugin? plugin = null;
+
                 if (searchType == SearchType.BingVideos)
                 {
-                    BingVideoSearchParameters videoSearchParameters = new BingVideoSearchParameters()
-                        { Market = "en-IN", SafeSearch = BingSearchSafeSearchList.Moderate };
+                    BingVideoSearchParameters videoSearchParameters = new()
+                    { Market = "en-IN", SafeSearch = BingSearchSafeSearchList.Moderate };
 
-                    var bingConnector = new BingVideoConnector(bingVideoSubscriptionKey, videoSearchParameters);
+                    var bingConnector = new BingVideoConnector(Config.BingVideoSubscriptionKey, videoSearchParameters);
 
-                    WebSearchEnginePlugin plugin = new WebSearchEnginePlugin(bingConnector);
-
-                    var bingVideoSkill = kernel.ImportFunctions(plugin, "search");
-
-                    result = await kernel.RunAsync(keyword, bingVideoSkill["search"]);
+                    plugin = new WebSearchEnginePlugin(bingConnector);
 
                 }
                 else if (searchType == SearchType.BingNews)
                 {
-                    BingNewsParameter bingNewsParameter = new BingNewsParameter
+                    BingNewsParameter bingNewsParameter = new()
                     {
-                        Market = "en-IN", SafeSearch = BingSearchSafeSearchList.Moderate,
-                        Category = BingNewsCategories.Top
+                        Market = "en-IN",
+                        SafeSearch = BingSearchSafeSearchList.Moderate,
+                        Category = BingNewsCategories.Business
                     };
 
-                    var bingConnector = new BingNewsConnector(bingNewsSubscriptionKey, bingNewsParameter);
+                    var bingConnector = new BingNewsConnector(Config.BingNewsSubscriptionKey, bingNewsParameter);
 
-                    var bingNewsSkill = kernel.ImportFunctions(new WebSearchEnginePlugin(bingConnector),
-                        nameof(BingNewsParameter));
-
-                    result = await kernel.RunAsync(keyword, bingNewsSkill["search"]);
-
+                    plugin = new WebSearchEnginePlugin(bingConnector);
                 }
                 else
                 {
@@ -68,8 +66,23 @@ namespace BingSearchSample
                     break;
                 }
 
-                Console.WriteLine("Result: \n");
+                kernel.ImportPluginFromObject(plugin, nameof(WebSearchEnginePlugin));
+
+                var weatherKernelFunction =
+                    kernel.Plugins.GetFunction(nameof(WebSearchEnginePlugin), "search");
+
+                //KernelArguments 
+                var kernelArguments = new KernelArguments
+                {
+                    { "query", keyword }
+                };
+
+                //Invoke the kernel function
+                result = await kernel.InvokeAsync(weatherKernelFunction, kernelArguments);
+
                 var resultUrl = result?.GetValue<string>();
+
+                Console.WriteLine("Result: \n");
 
                 string[]? urls = resultUrl?.Replace("[", "").Replace("]", "").Split(',');
 
@@ -84,14 +97,8 @@ namespace BingSearchSample
                 }
 
                 Console.WriteLine("\n\n");
+                Console.Read();
             }
         }
-    }
-
-    public enum SearchType
-    {
-        None = 0,
-        BingVideos = 1,
-        BingNews = 2,
     }
 }

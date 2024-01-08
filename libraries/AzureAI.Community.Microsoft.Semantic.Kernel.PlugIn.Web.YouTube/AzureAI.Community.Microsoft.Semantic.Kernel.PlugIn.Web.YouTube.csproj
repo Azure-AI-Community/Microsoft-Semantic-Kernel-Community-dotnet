@@ -29,8 +29,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Google.Apis.YouTube.v3" Version="1.62.0.3169" />
-		<PackageReference Include="Microsoft.SemanticKernel" Version="$(SKVersion)" />
-		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="$(SKVersion)" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.0.1" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Web" Version="1.0.1-alpha" />
 	</ItemGroup>
 
 	<ItemGroup>

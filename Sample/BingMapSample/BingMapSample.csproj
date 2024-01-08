@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.csproj" />
+    <PackageReference Include="Azure.Maps.Search" Version="1.0.0-beta.4" />
   </ItemGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Azure.Maps.Search" Version="1.0.0-beta.4" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.BingMap\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.csproj" />
   </ItemGroup>
 
 </Project>

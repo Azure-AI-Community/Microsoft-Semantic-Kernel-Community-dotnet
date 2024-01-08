@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.Video
 {
+
+#pragma warning disable SKEXP0054
     public class BingVideoConnector : IWebSearchEngineConnector
     {
         private readonly string subscriptionKey;
