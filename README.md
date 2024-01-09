@@ -23,5 +23,6 @@ The **Microsoft-Semantic-Kernel-Community** is a versatile platform that support
 
 | Plugin | Description |
 |--------|-------------|
+| TextNumericConverterPlugin |  Textual representations to their corresponding numeric values |
 | [Bing Video Plugin (Upcoming)](#bing-video-plugin-upcoming) | Access Bing Video Search functionality. |
 | [Bing News Plugin (Upcoming)](#bing-news-plugin-upcoming) | Access Bing News Search functionality. |
