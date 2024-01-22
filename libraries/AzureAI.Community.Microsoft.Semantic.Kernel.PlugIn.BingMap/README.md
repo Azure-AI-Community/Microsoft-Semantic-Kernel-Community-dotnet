@@ -1,4 +1,12 @@
+
+
 # SuggestionAddressPlugin
+
+## 1.0.0-preview-6 
+    
+    Added the name property for Bing Maps connector
+
+
 
 The `AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap` This component offers a streamlined solution for discovering based on suggestions such as hotels, coffee shops, restaurants, and petrol stations.
 
