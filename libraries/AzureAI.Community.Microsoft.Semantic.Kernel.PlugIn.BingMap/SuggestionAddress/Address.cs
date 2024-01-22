@@ -5,6 +5,7 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.Suggest
 
 public class Address
 {
+    public string Name { get; set; }
     public double Longitude { get; set; }
 
     public double Latitude { get; set; }
