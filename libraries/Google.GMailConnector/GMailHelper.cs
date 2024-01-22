@@ -6,6 +6,7 @@ using MimeKit;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google;
 
+#pragma warning disable SKEXP0053
 class GMailHelper
 {
     public MimeMessage CreateEmail(string senderName, string fromAddress, string to, string subject, string body)

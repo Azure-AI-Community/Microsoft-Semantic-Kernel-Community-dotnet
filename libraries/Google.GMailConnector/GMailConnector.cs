@@ -5,6 +5,7 @@ using Microsoft.SemanticKernel.Plugins.MsGraph.Models;
 
 namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Google;
 
+#pragma warning disable SKEXP0053
 public class GMailConnector : IEmailConnector
 {
     private readonly GmailService gMailService;
