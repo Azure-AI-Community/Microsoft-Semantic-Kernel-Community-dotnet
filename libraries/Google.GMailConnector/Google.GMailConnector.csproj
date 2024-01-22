@@ -22,18 +22,18 @@
     <PackAsTool>False</PackAsTool>
     <license>MIT</license>
     <Copyright>Azure.AI.Community</Copyright>
-    <Version>$(FileVersion)</Version>
-    <PackageVersion>$(NugetVersion)</PackageVersion>
+    <Version>1.0.0-beta7</Version>
+    <PackageVersion>1.0.0-beta7</PackageVersion>
     <PackageOutputPath>B:\github\Microsoft-Semantic-Kernel-Community-dotnet\libraries\nugetPackage</PackageOutputPath>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.Discovery.v1" Version="1.62.0" />
     <PackageReference Include="Google.Apis.Gmail.v1" Version="1.62.1.3217" />
     <PackageReference Include="Google.Apis.PeopleService.v1" Version="1.63.0.3093" />
-    <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-beta3" />
-    <PackageReference Include="Microsoft.SemanticKernel.Plugins.MsGraph" Version="1.0.0-beta3" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.1.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.MsGraph" Version="1.1.0-alpha" />
     <PackageReference Include="MimeKit" Version="4.2.0" />
   </ItemGroup>
 

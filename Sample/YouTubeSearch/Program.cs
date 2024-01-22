@@ -10,19 +10,23 @@ namespace YouTubeSearchSample
         {
             Console.WriteLine("Hello, Youtube Connector for Microsoft Semantic Kernel");
 
-            string apiKey = "";
-            string youTubeChannelId = "";
+            var youTubeConnector = new YouTubeConnector(apiKey: Config.YoutubeKey, channelId: Config.YouTubeChannelKey);
 
-            var youTubeConnector = new YouTubeConnector(apiKey: apiKey,channelId: youTubeChannelId);
+            var kernel = Kernel.CreateBuilder()
+                .AddAzureOpenAIChatCompletion(Config.DeploymentOrModelId, Config.Endpoint, Config.ApiKey)
+                .Build();
 
-            IKernel kernel = Kernel.Builder.Build();
+#pragma warning disable SKEXP0054
+            var youtubeSkill =
+                kernel.ImportPluginFromObject(new WebSearchEnginePlugin(youTubeConnector), nameof(YouTubeConnector));
 
-            var youtubeSkill = kernel.ImportFunctions(new WebSearchEnginePlugin(youTubeConnector), nameof(YouTubeConnector));
+            KernelArguments kernelArguments = new() { { "query", "Microsoft Bot Composer" } };
 
-            var result = await kernel.RunAsync("Bot composer", youtubeSkill["search"]);
+            var result = await kernel.InvokeAsync(youtubeSkill["search"], kernelArguments);
 
             var resultUrl = result?.GetValue<string>();
 
+            
             string[]? urls = resultUrl?.Replace("[", "").Replace("]", "").Split(',');
 
             int serialNumber = 1;
@@ -34,9 +38,8 @@ namespace YouTubeSearchSample
                     Console.WriteLine($"{serialNumber++}: {trimmedUrl}");
                 }
             }
-
+            
             Console.ReadKey();
-
         }
     }
 }
