@@ -42,6 +42,7 @@ namespace AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.Suggest
             {
                 addresses.Add(new()
                 {
+                    Name = result.PointOfInterest?.Name,
                     Latitude = result.Position.Latitude,
                     Longitude = result.Position.Longitude,
                     Location = result.Address.FreeformAddress
