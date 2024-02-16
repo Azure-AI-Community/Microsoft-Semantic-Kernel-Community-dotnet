@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.GMailConnector", "Google.GMailConnector\Google.GMailConnector.csproj", "{0DA49646-328A-49EC-84F2-3DAACE3D0F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMapSample", "..\Sample\BingMapSample\BingMapSample.csproj", "{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingMapSample", "..\Sample\BingMapSample\BingMapSample.csproj", "{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.Plugin.FlightTracker", "AzureAI.Community.SK.Plugin.FlightTracker\AzureAI.Community.SK.Plugin.FlightTracker.csproj", "{41E23A44-E6AB-4D41-9688-FD2D80179F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
