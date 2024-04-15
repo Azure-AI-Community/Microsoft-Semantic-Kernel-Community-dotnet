@@ -1,4 +1,4 @@
-﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube;
+﻿using AzureAI.Community.SK.PlugIn.Web.YouTube;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Plugins.Web;
 

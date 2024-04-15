@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.SK.PlugIn.Web.Bing.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.SK.PlugIn.Web.Bing\AzureAI.Community.SK.PlugIn.Web.Bing.csproj" />
   </ItemGroup>
 
   <ItemGroup>

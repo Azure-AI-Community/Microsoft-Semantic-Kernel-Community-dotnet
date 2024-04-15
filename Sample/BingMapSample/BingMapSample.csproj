@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.BingMap\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.BingMap\AzureAI.Community.SK.PlugIn.Web.BingMap.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.SK.PlugIn.Web.BingMap\AzureAI.Community.SK.PlugIn.Web.BingMap.csproj" />
   </ItemGroup>
 
 </Project>

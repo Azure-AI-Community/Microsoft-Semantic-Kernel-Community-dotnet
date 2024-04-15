@@ -1,4 +1,4 @@
-﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.SuggestionAddress;
+﻿using AzureAI.Community.SK.PlugIn.Web.BingMap.SuggestionAddress;
 using Microsoft.SemanticKernel;
 
 namespace BingMapSample
