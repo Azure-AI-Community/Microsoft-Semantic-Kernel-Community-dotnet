@@ -1,5 +1,5 @@
-﻿using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.News;
-using AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.Video;
+﻿using AzureAI.Community.SK.PlugIn.Web.Bing.News;
+using AzureAI.Community.SK.PlugIn.Web.Bing.Video;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Plugins.Web;
 

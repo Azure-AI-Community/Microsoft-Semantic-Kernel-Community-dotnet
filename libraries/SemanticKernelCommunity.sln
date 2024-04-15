@@ -7,25 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3693
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YouTubeSearchSample", "..\Sample\YouTubeSearch\YouTubeSearchSample.csproj", "{8670603D-FA22-4C37-B8F9-0D526E96A27A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.csproj", "{A556EDAA-AD6A-4C2C-89DB-069648189B07}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Speech", "AzureAI.Community.Microsoft.Semantic.Kernel.Speech\AzureAI.Community.Microsoft.Semantic.Kernel.Speech.csproj", "{9864B293-45E3-4885-A072-1C48C96EFBAC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.Translation", "AzureAI.Community.Microsoft.Semantic.Kernel.Translation\AzureAI.Community.Microsoft.Semantic.Kernel.Translation.csproj", "{C7F4009C-49F3-412E-8138-9365BB5DB27F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Intent.csproj", "{1985BD58-E415-455F-B9B9-632A74544D01}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.Bing.csproj", "{175203F8-F44A-4874-9CEE-C307D9018F06}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingSearchSample", "..\Sample\BingSearchSample\BingSearchSample.csproj", "{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap", "AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.BingMap\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.BingMap.csproj", "{7B2108D9-61D4-4C28-BBC3-0842E536B23D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.GMailConnector", "Google.GMailConnector\Google.GMailConnector.csproj", "{0DA49646-328A-49EC-84F2-3DAACE3D0F63}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingMapSample", "..\Sample\BingMapSample\BingMapSample.csproj", "{0CF13826-BFB1-4FB3-9710-26B317F3E3A0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.Plugin.FlightTracker", "AzureAI.Community.SK.Plugin.FlightTracker\AzureAI.Community.SK.Plugin.FlightTracker.csproj", "{41E23A44-E6AB-4D41-9688-FD2D80179F47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Intent", "AzureAI.Community.SK.PlugIn.Intent\AzureAI.Community.SK.PlugIn.Intent.csproj", "{E4634A7B-C780-4B35-A65B-20ED2859FCBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Speech", "AzureAI.Community.SK.PlugIn.Speech\AzureAI.Community.SK.PlugIn.Speech.csproj", "{AE5B265A-2155-48A7-A3A8-A7F96AD71955}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Translation", "AzureAI.Community.SK.PlugIn.Translation\AzureAI.Community.SK.PlugIn.Translation.csproj", "{365D1622-3097-47DD-B883-D3468B760B1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Web.Bing", "AzureAI.Community.SK.PlugIn.Web.Bing\AzureAI.Community.SK.PlugIn.Web.Bing.csproj", "{8F6A0AFD-D85E-439B-A05D-9EFECE87B3B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Web.BingMap", "AzureAI.Community.SK.PlugIn.Web.BingMap\AzureAI.Community.SK.PlugIn.Web.BingMap.csproj", "{B6C2F461-C47E-4AA4-82FC-F963E2AC918C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAI.Community.SK.PlugIn.Web.YouTube", "AzureAI.Community.SK.PlugIn.Web.YouTube\AzureAI.Community.SK.PlugIn.Web.YouTube.csproj", "{510E1D21-B93A-41B3-AF9C-5913CA3EC284}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,34 +37,10 @@ Global
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8670603D-FA22-4C37-B8F9-0D526E96A27A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A556EDAA-AD6A-4C2C-89DB-069648189B07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9864B293-45E3-4885-A072-1C48C96EFBAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7F4009C-49F3-412E-8138-9365BB5DB27F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1985BD58-E415-455F-B9B9-632A74544D01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{175203F8-F44A-4874-9CEE-C307D9018F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{175203F8-F44A-4874-9CEE-C307D9018F06}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4CE26F-9A8F-4CF7-82FD-59662BC1F0AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B2108D9-61D4-4C28-BBC3-0842E536B23D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA49646-328A-49EC-84F2-3DAACE3D0F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,6 +53,30 @@ Global
 		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41E23A44-E6AB-4D41-9688-FD2D80179F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4634A7B-C780-4B35-A65B-20ED2859FCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4634A7B-C780-4B35-A65B-20ED2859FCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4634A7B-C780-4B35-A65B-20ED2859FCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4634A7B-C780-4B35-A65B-20ED2859FCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5B265A-2155-48A7-A3A8-A7F96AD71955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5B265A-2155-48A7-A3A8-A7F96AD71955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5B265A-2155-48A7-A3A8-A7F96AD71955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5B265A-2155-48A7-A3A8-A7F96AD71955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365D1622-3097-47DD-B883-D3468B760B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365D1622-3097-47DD-B883-D3468B760B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365D1622-3097-47DD-B883-D3468B760B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365D1622-3097-47DD-B883-D3468B760B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6A0AFD-D85E-439B-A05D-9EFECE87B3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6A0AFD-D85E-439B-A05D-9EFECE87B3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6A0AFD-D85E-439B-A05D-9EFECE87B3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6A0AFD-D85E-439B-A05D-9EFECE87B3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C2F461-C47E-4AA4-82FC-F963E2AC918C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C2F461-C47E-4AA4-82FC-F963E2AC918C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C2F461-C47E-4AA4-82FC-F963E2AC918C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C2F461-C47E-4AA4-82FC-F963E2AC918C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510E1D21-B93A-41B3-AF9C-5913CA3EC284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510E1D21-B93A-41B3-AF9C-5913CA3EC284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510E1D21-B93A-41B3-AF9C-5913CA3EC284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510E1D21-B93A-41B3-AF9C-5913CA3EC284}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

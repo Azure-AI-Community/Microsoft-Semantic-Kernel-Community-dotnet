@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.Microsoft.Semantic.Kernel.PlugIn.Web.YouTube\AzureAI.Community.SK.PlugIn.Web.YouTube.csproj" />
+    <ProjectReference Include="..\..\libraries\AzureAI.Community.SK.PlugIn.Web.YouTube\AzureAI.Community.SK.PlugIn.Web.YouTube.csproj" />
   </ItemGroup>
 
 </Project>
