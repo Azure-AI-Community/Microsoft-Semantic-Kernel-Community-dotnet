@@ -21,7 +21,7 @@
 		<PackAsTool>False</PackAsTool>
 		<license>MIT</license>
 		<Copyright>Azure.AI.Community</Copyright>
-    <Version>$(FileVersion)</Version>
+    <Version>1.0.1</Version>
     <PackageVersion>$(NugetVersion)</PackageVersion>
     <PackageOutputPath>..\nugetPackage</PackageOutputPath>
   </PropertyGroup>
