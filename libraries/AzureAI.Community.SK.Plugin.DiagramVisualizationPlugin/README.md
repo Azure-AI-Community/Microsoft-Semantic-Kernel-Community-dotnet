@@ -35,3 +35,6 @@ If the answer is no, you decide to stay indoors and read a book. Both activities
 ";
 
 ## Genreate image from the description using Mermaid code
+![diagram_1740906220394_423672cf811c4f8188618ad007f66878](https://github.com/user-attachments/assets/a623dbd5-cfc9-4b46-9872-1909c089d8ce)
+
+
