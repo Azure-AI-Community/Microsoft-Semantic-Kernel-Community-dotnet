@@ -25,3 +25,21 @@ To install the `MermaidPlugin`, simply add it to your project through the kernel
 ```csharp
 // Add the MermaidPlugin to the Kernel
 kernel.Plugins.AddFromType<MermaidPlugin>(nameof(MermaidPlugin));
+
+```
+
+## Example Usage
+
+string diagramDescription = @"
+The decision starts with a question: Is it sunny? If the answer is yes, you choose to go for a walk and enjoy it.
+If the answer is no, you decide to stay indoors and read a book. Both activities lead to the same conclusion: the end of the day. 
+";
+
+## Generate a Mermaid diagram from the description
+```mermaid
+flowchart TD;
+    A{Is it sunny?} -->|Yes| B[Go for a walk];
+    A -->|No| C[Stay indoors and read a book];
+    B --> D(End of the day);
+    C --> D;
+```

@@ -8,28 +8,29 @@ using Microsoft.SemanticKernel.Connectors.OpenAI;
 
 Console.WriteLine("Hello, World!");
 
+
+//Azure OpenAI Chat Completion Service
+//Azure OpenAI Chat Completion Service
+string deploymentOrModelId = "gpt-4o";
+string endpoint = "";
+string apiKey = "";
+
 string diagramDescription = @"
-1. Vinoth says to Ramesh, 'Hello Ramesh, how are you?'
-2. Ramesh replies to Vinoth, 'I am good, thanks!'
-3. Vinoth says to Karthik, 'Hello Karthik, how are you?'
-4. Karthik replies to Vinoth, 'I am good too!'
-5. Ramesh asks Karthik, 'How are you, Karthik?'
-6. Karthik replies to Ramesh, 'I am good, Ramesh!'
-7. Ramesh says to Vinoth, 'Goodbye Vinoth!'
-8. Vinoth says to Karthik, 'Goodbye Karthik!'
-9. Karthik says to Ramesh, 'Goodbye Ramesh!'
+The decision starts with a question: Is it sunny? If the answer is yes, you choose to go for a walk and enjoy it.
+If the answer is no, you decide to stay indoors and read a book. Both activities lead to the same conclusion: the end of the day. 
 ";
 
 Kernel kernel = Kernel.CreateBuilder()
-    .AddAzureOpenAIChatCompletion("gpt-4o", "", "")
+    .AddAzureOpenAIChatCompletion(deploymentOrModelId,endpoint,apiKey)
     .Build();
 
 
-kernel.Plugins.AddFromType<VisualizationPlugin>(nameof(VisualizationPlugin));
+//kernel.Plugins.AddFromType<VisualizationPlugin>(nameof(VisualizationPlugin));
 kernel.Plugins.AddFromType<MermaidPlugin>(nameof(MermaidPlugin));
 
 
 string prompt = $"create visualization if for the following steps? {diagramDescription}";
+prompt = $"create Mermaid if for the following steps? {diagramDescription}";
 
 var openAIPromptSettings = new OpenAIPromptExecutionSettings()
 {

@@ -24,3 +24,14 @@ To install the `VisualizationPlugin`, add it to your project by importing it int
 ```csharp
 // Add the VisualizationPlugin to the Kernel
 kernel.Plugins.AddFromType<VisualizationPlugin>(nameof(VisualizationPlugin));
+
+```
+
+## Example Usage
+
+string diagramDescription = @"
+The decision starts with a question: Is it sunny? If the answer is yes, you choose to go for a walk and enjoy it.
+If the answer is no, you decide to stay indoors and read a book. Both activities lead to the same conclusion: the end of the day. 
+";
+
+## Genreate image from the description using Mermaid code
