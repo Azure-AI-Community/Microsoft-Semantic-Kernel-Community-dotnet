@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>AzureAI.Community.SK.Plugin.MermaidPlugin</Title>
+		<Authors>Azure.AI.Community - Vinoth Rajendran</Authors>
+		<Description>AzureAI.Community.SK.Plugin.MermaidPlugin</Description>
+		<PackageProjectUrl>https://github.com/Azure-AI-Community</PackageProjectUrl>
+		<PackageIcon>azureai.jpeg</PackageIcon>
+		<RepositoryUrl>https://github.com/Azure-AI-Community</RepositoryUrl>
+		<PackageReleaseNotes>https://github.com/Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet/blob/main/README.md</PackageReleaseNotes>
+		<PackageId>AzureAI.Community.SK.Plugin.MermaidPlugin</PackageId>
+		<PackageLicenseUrl>https://github.com/Azure-AI-Community</PackageLicenseUrl>
+		<RootNamespace>AzureAI.Community.SK.Plugin.MermaidPlugin</RootNamespace>
+		<Company>Azure.AI.Community</Company>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>Microsoft;Semantic:Kernel;AI;Azure;Text;Translate;Mermaid;Plugin;search:diagram</PackageTags>
+		<PackAsTool>False</PackAsTool>
+		<license>MIT</license>
+		<Copyright>Azure.AI.Community</Copyright>
+    <Version>$(FileVersion)</Version>
+    <PackageVersion>$(NugetVersion)</PackageVersion>
+    <PackageOutputPath>..\nugetPackage</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.38.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <None Update="azureai.jpeg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+  </ItemGroup>
+
+</Project>
